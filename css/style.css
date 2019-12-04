@@ -67,7 +67,7 @@ body {
   padding: 0;
   margin: 0;
 }
-
+/* -------------header-------------- */
 header {
   margin: 0 auto;
   display: block;
@@ -121,8 +121,6 @@ a {
 .header-nav-item {
   width: 90px;
   height: 36px;
-  /* text-align: center;
-  align-items: center; */
   padding: 0;
   margin: 0;
   display: flex;
@@ -162,6 +160,7 @@ a {
 .header-text {
   display: block;
   text-align: center;
+  margin-bottom: 136px;
 }
 
 .header-text-name {
@@ -208,6 +207,19 @@ a {
   cursor: pointer;
 }
 
+figure {
+  max-width: 220px;
+  height: auto;
+  margin: 0;
+}
+
+/* ------------main-----------  */
+
+.main-list-items {
+  padding: 0;
+  margin: 0;
+}
+
 .main-site {
   padding-top: 74px;
   margin: 0 auto;
@@ -232,11 +244,18 @@ h3 {
   margin: 0;
 }
 
+.main-list-item {
+  display: flex;
+  justify-content: center;
+}
+
 figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
 .bradley-icon::after {
@@ -343,11 +362,6 @@ figcaption {
   margin-bottom: 20px;
 }
 
-figure {
-  margin-top: 28px;
-  margin-bottom: 0;
-}
-
 .text-item {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -371,10 +385,80 @@ figure {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 56px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-main:hover,
 .btn-main:focus {
   opacity: 0.6;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+    max-width: 302px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header-text {
+    margin-bottom: 234px;
+  }
+
+  .wrapper-img {
+    background: #1a1915;
+    background-image: url(/img/bg-desktop.png);
+    display: block;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h3 {
+    display: block;
+    width: auto;
+  }
+
+  .btn-main {
+    width: 192px;
+    height: 40px;
+  }
+
+  .list2 {
+    order: 1;
+  }
+
+  .list4 {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-text {
+    margin-bottom: 234px;
+  }
+
+  .wrapper-img {
+    background: #1a1915;
+    background-image: url(/img/bg-desktop.png);
+    display: block;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-main {
+    width: 192px;
+    height: 40px;
+  }
 }
