@@ -34,9 +34,12 @@ input.addEventListener("blur", input => {
   const inputLength = element.value.length;
 
   if (inputTrueLength == inputLength) {
-    input.classList.add("valid");
-    input.classList.remove("invalid");
+    // input.classList.remove("validation");
+    element.classList.add("valid");
+    element.classList.remove("invalid");
   } else {
-    input.classlist.replace("valid", "invalid");
+    // input.classlist.replace("valid", "invalid");
+    element.classList.remove("valid");
+    element.classList.add("invalid");
   }
 });
