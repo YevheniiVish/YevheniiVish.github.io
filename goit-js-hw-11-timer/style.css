@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 500px;
+  height: 250px;
+  font-size: 25px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+.field {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.value {
+  padding-top: 50px;
+}
